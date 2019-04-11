@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
   <head>
@@ -10,9 +11,18 @@
       integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
 
       crossorigin="anonymous">
+    <link rel="stylesheet" href="css/roadmap.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+        <div id="navbar">
+            <a href="index2.html#section1" class = "linkbutton">Home</a>
+            <a href="index2.html#section2" class = "linkbutton">Features</a>
+            <a href="https://github.com/turtlegold/TurtleGold#installing" class = "linkbutton">Install</a>
+            <a href="roadmap.html" class = "linkbutton">Roadmap</a>
+            <a href="https://github.com/turtlegold/turtlegold" class = "linkbutton" target="_blank"><img src="github.jpg" width="25" height="25" title="github" alt="github"></a>
+            <a href="https://discord.gg/4zycsZ6" class = "linkbutton" target="_blank"><img src="discord.jpg" width="25" height="25" title="discord" alt="discord"></a>
+        </div>
     <section class="section">
       <div class="columns">
         <div class="column"></div>
@@ -71,5 +81,28 @@
         <div class="column"></div>
       </div>
     </section>
+        <script>
+   
+
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+    }
+
+
+    </script>
   </body>
 </html>
