@@ -13,6 +13,55 @@ html {
   white-space: nowrap;
   animation: typingAnim 5s steps(50);
 }
+/*.button-windows .words-windows { display: none; }
+.button-windows:hover .words-windows { display: none; }
+.button-windows:hover .info-windows { display: inline; }*/
+.releases-windows{
+    background-color: #ffffff; 
+    color: black;
+    border: 5px solid black;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
+    width: 300px;
+    height: 400px;
+}
+.releases-windows .info-windows{
+    display: none; 
+}
+.releases-windows:hover .words-windows{
+   display: none; 
+}
+.releases-windows:hover .info-windows{
+   display: inline; 
+}
+
+
+.releases-linux{
+    background-color: #ffffff; 
+    color: black;
+    border: 5px solid black;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
+    width: 300px;
+    height: 400px;
+}
+.releases-linux .info-linux{
+    display: none; 
+}
+.releases-linux:hover .words-linux{
+   display: none; 
+}
+.releases-linux:hover .info-linux{
+   display: inline; 
+}
 .specs {
   background-color: #000000; /* black */
   border: none;
