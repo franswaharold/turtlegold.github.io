@@ -1,460 +1,439 @@
-body {
-   background: black;
-   margin: 0; 
-   text-align: center;
-   display: block;
+body{
+   background:black;
+   text-align:center;
+   display:block;
+   margin:0;
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+  scroll-behavior:smooth;
  }
 .typing > *{
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typingAnim 5s steps(50);
+  overflow:hidden;
+  white-space:nowrap;
+  animation:typingAnim 5s steps(50);
 }
-/*.button-windows .words-windows { display: none; }
-.button-windows:hover .words-windows { display: none; }
-.button-windows:hover .info-windows { display: inline; }*/
 .releases-windows{
-    background-color: #ffffff; 
-    color: black;
-    border: 5px solid black;
-    padding: 10px 27px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 0;
-    width: 300px;
-    height: 400px;
+    background:#ffffff; 
+    color:black;
+    border:5px solid black;
+    padding:10px 27px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:20px;
+    margin:0;
+    width:300px;
+    height:400px;
 }
 .releases-windows .info-windows{
-    display: none; 
+    display:none; 
 }
 .releases-windows:hover .words-windows{
-   display: none; 
+   display:none; 
 }
 .releases-windows:hover .info-windows{
-   display: inline; 
+   display:inline; 
 }
 
 
 .releases-linux{
-    background-color: #ffffff; 
-    color: black;
-    border: 5px solid black;
-    padding: 10px 27px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 0;
-    width: 300px;
-    height: 400px;
+    background:#ffffff; 
+    color:black;
+    border:5px solid black;
+    padding:10px 27px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:20px;
+    margin:0;
+    width:300px;
+    height:400px;
 }
 .releases-linux .info-linux{
-    display: none; 
+    display:none; 
 }
 .releases-linux:hover .words-linux{
-   display: none; 
+   display:none; 
 }
 .releases-linux:hover .info-linux{
-   display: inline; 
+   display:inline; 
 }
-.specs {
-  background-color: #000000; /* black */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 0;
-  width: 300px;
-  height: 150;
+.specs{
+  background:#000000; /*black */
+  border:none;
+  color:white;
+  padding:15px 32px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:20px;
+  margin:0;
+  width:300px;
+  height:150;
 }
-.section1 {
-  background-color: black;
-  height: 100%;
-  text-align: center;
-  margin: 0;
-  color: white;
+.section1{
+  background:black;
+  height:100%;
+  text-align:center;
+  margin:0;
+  color:white;
 }
-.section2 {
+.section2{
 
-  background-color: white;
-  height: 100%;
-  text-align: center;
-  margin: 0;
-  color: black;
+  background:white;
+  height:100%;
+  text-align:center;
+  margin:0;
+  color:black;
 }
 .rightCenter{
-    text-align: right;
+    text-align:right;
 }
-/*#navbar {
-  overflow: hidden;
-  background-color: black;
-  text-align: center;
-  list-style: none;
-  z-index: 10;
-}
-
-/* Navbar links */
-/*
-#navbar a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}*/
 /* Navbar container */
-#navbar {
-  overflow: hidden;
-  background-color: black;
-  text-align: center;
-  list-style: none;
-  z-index: 10;
+#navbar{
+  overflow:hidden;
+  background:black;
+  text-align:center;
+  list-style:none;
+  z-index:10;
 }
 
 /* Navbar links */
 
-#navbar a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+#navbar a{
+  display:inline-block;
+  color:white;
+  text-align:center;
+  padding:14px;
+  text-decoration:none;
 }
 
 /* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
+.dropdown{
+  float:left;
+  overflow:hidden;
 }
 
 /* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px; 
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+.dropdown .dropbtn{
+  font-size:16px; 
+  border:none;
+  outline:none;
+  color:white;
+  padding:14px 16px;
+  background:inherit;
+  font-family:inherit; /* Important for vertical align on mobile phones */
+  margin:0; /* Important for vertical align on mobile phones */
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background:red;
 }
 
 /* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:#f9f9f9;
+  min-width:160px;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index:1;
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+.dropdown-content a{
+  float:none;
+  color:black;
+  padding:12px 16px;
+  text-decoration:none;
+  display:block;
+  text-align:left;
 }
 
 /* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
+.dropdown-content a:hover{
+  background:#ddd;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown:hover .dropdown-content{
+  display:block;
 }
    
 
 /* Page content */
-.content {
-  padding: 16px;
+.content{
+  padding:16px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.sticky{
+  position:fixed;
+  top:0;
+  width:100%;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
+.sticky + .content{
+  padding-top:60px;
 }
 
-.button {
-  background-color: #ffffff; /* white */
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 0;
+.button{
+  background:#ffffff; /* white */
+  border:none;
+  color:black;
+  padding:15px 32px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:20px;
+  margin:0;
 }
 
 .button:hover{
-  background-color: #000000; /* black */
-  color: white;
-  border: 5px solid white;
-  padding: 10px 27px;
+  background:#000000; /* black */
+  color:white;
+  border:5px solid white;
+  padding:10px 27px;
 
 }
-.button-disabled {
-  background-color: #ffffff; /* white */
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 0;
-  cursor: not-allowed;
+.button-disabled{
+  background:#ffffff; /* white */
+  border:none;
+  color:black;
+  padding:15px 32px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:20px;
+  margin:0;
+  cursor:not-allowed;
 }
 
-.button1 {
-  background-color: #000000; /* black */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 0;
+.button1{
+  background:#000000; /* black */
+  border:none;
+  color:white;
+  padding:15px 32px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:20px;
+  margin:0;
 }
 
 .button1:hover{
-  background-color: #ffffff; /* white */
-  color: black;
-  border: 5px solid black;
-  padding: 10px 27px;
+  background:#ffffff; /* white */
+  color:black;
+  border:5px solid black;
+  padding:10px 27px;
 }
-.button1-disabled {
-  background-color: #000000; /* black */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
+.button1-disabled{
+  background:#000000; /* black */
+  border:none;
+  color:white;
+  padding:15px 32px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:20px;
 }
 
 
-.linkbutton {
-  background-color: #000000; /* black */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  margin: 0;
+.linkbutton{
+  background:#000000; /* black */
+  border:none;
+  color:white;
+  padding:15px 32px;
+  text-align:center;
+  display:inline-block;
+  font-size:20px;
+  margin:0;
 }
 
 .linkbutton:hover{
-  text-decoration: underline;
+  text-decoration:underline;
 
 }
-body {
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #333;
+body{
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:#333;
 }
 
-.container {
-  position: relative;
-  width: 24px;
-  height: 24px;
+.container{
+  position:relative;
+  width:24px;
+  height:24px;
 }
 
-.chevronb {
-  position: absolute;
-  width: 28px;
-  height: 8px;
-  opacity: 0;
-  transform: scale3d(0.5, 0.5, 0.5);
-  animation: move 3s ease-out infinite;
+.chevronb{
+  position:absolute;
+  width:28px;
+  height:8px;
+  opacity:0;
+  transform:scale3d(0.5, 0.5, 0.5);
+  animation:move 3s ease-out infinite;
 }
 
-.chevronb:first-child {
-  animation: move 3s ease-out 1s infinite;
+.chevronb:first-child{
+  animation:move 3s ease-out 1s infinite;
 }
 
-.chevronb:nth-child(2) {
-  animation: move 3s ease-out 2s infinite;
+.chevronb:nth-child(2){
+  animation:move 3s ease-out 2s infinite;
 }
 
 .chevronb:before,
-.chevronb:after {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 51%;
-  background: #000000;
+.chevronb:after{
+  content:' ';
+  position:absolute;
+  top:0;
+  height:100%;
+  width:51%;
+  background:#000000;
 }
 
-.chevronb:before {
-  left: 0;
-  transform: skew(0deg, 30deg);
+.chevronb:before{
+  left:0;
+  transform:skew(0deg, 30deg);
 }
 
-.chevronb:after {
-  right: 0;
-  width: 50%;
-  transform: skew(0deg, -30deg);
+.chevronb:after{
+  right:0;
+  width:50%;
+  transform:skew(0deg, -30deg);
 }
 
-.chevronw {
-  position: absolute;
-  width: 28px;
-  height: 8px;
-  opacity: 0;
-  transform: scale3d(0.5, 0.5, 0.5);
-  animation: move 3s ease-out infinite;
+.chevronw{
+  position:absolute;
+  width:28px;
+  height:8px;
+  opacity:0;
+  transform:scale3d(0.5, 0.5, 0.5);
+  animation:move 3s ease-out infinite;
 }
 
-.chevronw:first-child {
-  animation: move 3s ease-out 1s infinite;
+.chevronw:first-child{
+  animation:move 3s ease-out 1s infinite;
 }
 
-.chevronw:nth-child(2) {
-  animation: move 3s ease-out 2s infinite;
+.chevronw:nth-child(2){
+  animation:move 3s ease-out 2s infinite;
 }
 
 .chevronw:before,
-.chevronw:after {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 51%;
-  background: #ffffff;
+.chevronw:after{
+  content:' ';
+  position:absolute;
+  top:0;
+  height:100%;
+  width:51%;
+  background:#ffffff;
 }
 
-.chevronw:before {
-  left: 0;
-  transform: skew(0deg, 30deg);
+.chevronw:before{
+  left:0;
+  transform:skew(0deg, 30deg);
 }
 
-.chevronw:after {
-  right: 0;
-  width: 50%;
-  transform: skew(0deg, -30deg);
+.chevronw:after{
+  right:0;
+  width:50%;
+  transform:skew(0deg, -30deg);
 }
 
-@keyframes move {
-  25% {
-    opacity: 1;
+@keyframes move{
+  25%{
+    opacity:1;
 
   }
-  33% {
-    opacity: 1;
-    transform: translateY(30px);
+  33%{
+    opacity:1;
+    transform:translateY(30px);
   }
-  67% {
-    opacity: 1;
-    transform: translateY(40px);
+  67%{
+    opacity:1;
+    transform:translateY(40px);
   }
-  100% {
-    opacity: 0;
-    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  100%{
+    opacity:0;
+    transform:translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
 
-.text {
-  display: block;
-  margin-top: 75px;
-  margin-left: -30px;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 12px;
-  color: #fff;
-  text-transform: uppercase;
-  white-space: nowrap;
-  opacity: .25;
-  animation: pulse 2s linear alternate infinite;
+.text{
+  display:block;
+  margin:75px 0 0 -30px;
+  font-family:"Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size:12px;
+  color:#fff;
+  text-transform:uppercase;
+  white-space:nowrap;
+  opacity:.25;
+  animation:pulse 2s linear alternate infinite;
 }
 
-@keyframes pulse {
-  to {
-    opacity: 1;
+@keyframes pulse{
+  to{
+    opacity:1;
   }
 }
 
 /* Popup container */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+.popup{
+  position:relative;
+  display:inline-block;
+  cursor:pointer;
 }
 
 /* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
+.popup .popuptext{
+  visibility:hidden;
+  width:160px;
+  background:#555;
+  color:#fff;
+  text-align:center;
+  border-radius:6px;
+  padding:8px 0;
+  position:absolute;
+  z-index:1;
+  bottom:125%;
+  left:50%;
+  margin-left:-80px;
 }
 
 /* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+.popup .popuptext::after{
+  content:"";
+  position:absolute;
+  top:100%;
+  left:50%;
+  margin-left:-5px;
+  border-width:5px;
+  border-style:solid;
+  border-color:#555 transparent transparent transparent;
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+.popup .show{
+  visibility:visible;
+  -webkit-animation:fadeIn 1s;
+  animation:fadeIn 1s
 }
 
 /* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
+@-webkit-keyframes fadeIn{
+  from{opacity:0;} 
+  to{opacity:1;}
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1 ;}
 }
